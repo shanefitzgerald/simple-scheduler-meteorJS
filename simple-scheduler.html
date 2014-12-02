@@ -1,0 +1,46 @@
+<head>
+  <title>FEWD Office Hours</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Office Hours</h1>
+    </header>
+	<div id="instructorOne" class="instructorContainer">
+	    <ul>
+	      {{#each instructorOneSchedules}}
+	        {{> instructorOneSchedule}}
+	      {{/each}}
+	    </ul>
+	</div>
+	<div id="instructorTwo" class="instructorContainer">
+		<ul>
+			{{#each instructorTwoSchedules}}
+			  {{> instructorTwoSchedule}}
+			{{/each}}
+		</ul>
+	</div>
+	<div class="clearfix"></div>
+  </div>
+</body>
+
+<template name="instructorOneSchedule">
+  <li>
+  	<span id="instructor">{{instructor}} - {{date}}</span>
+  	<span id="blockOne">{{blockOne}}</span>
+  	<span id="blockTwo">{{blockTwo}}</span>
+  	<span id="blockThree">{{blockThree}}</span>
+  	<span id="blockFour">{{blockFour}}</span>
+  </li>
+</template>
+
+<template name="instructorTwoSchedule">
+  <li>
+  	<span id="instructor">{{instructor}} - {{date}}</span>
+  	<span id="blockOne">{{blockOne}}</span>
+  	<span id="blockTwo">{{blockTwo}}</span>
+  	<span id="blockThree">{{blockThree}}</span>
+  	<span id="blockFour">{{blockFour}}</span>
+  </li>
+</template>
