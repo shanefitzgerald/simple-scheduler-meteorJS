@@ -77,10 +77,22 @@ body {
 
   font-size: 14px;
 }
+header {
+	width: 77%;
+	height: 100px;
+	margin: 0 auto;
+}
+header h1 {
+	display: inline;
+}
+span#login {
+	display: block;
+	float: right;
+}
 div.container {
 	border: 1px dashed black;
 	width: 80%;
-	margin: 0 auto;
+	margin: 45px auto;
 }
 div.instructorContainer {
 	border: 1px dashed black;
